@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manav Patel - Data Analyst Portfolio showcasing expertise in data analysis, visualization, and machine learning projects">
+    <meta name="keywords" content="data analyst, portfolio, Power BI, SQL, Python, data visualization, machine learning, analytics">
+    <meta name="author" content="Manav Patel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Manav Patel - Data Analyst Portfolio">
+    <meta property="og:description" content="Portfolio showcasing data analysis, visualization, and machine learning projects">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    
+    <title>Manav Patel - Data Analyst Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">MP</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <img src="images/profile.jpg" alt="Manav Patel" id="profile-img">
+            </div>
+            <h1>Manav Patel</h1>
+            <h2>Data Analyst</h2>
+            <p>Transforming data into actionable insights</p>
+            <div class="social-links">
+                <a href="https://github.com/manavpatel7220" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/manav-patel-7741b4293" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:manavmpatel2003@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="resume/Manav_patel_resume.pdf" class="resume-btn" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Enthusiastic recent graduate with strong analytical skills and proficiency in data analysis tools including SQL, Python, and visualization platforms like Power BI and Tableau. Experienced in data preprocessing, statistical analysis, and creating insightful dashboards to drive data-driven decision making.</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>Parul University</h4>
+                    <p>B-Tech in Computer Science and Engineering</p>
+                    <p>CGPA - 7.72 | 2021 - 2025</p>
+                </div>
+                <div class="education-item">
+                    <h4>Alembic Vidhyalaya</h4>
+                    <p>12th Grade</p>
+                    <p>Percentage - 83% | 2021</p>
+                </div>
+                <div class="education-item">
+                    <h4>Alembic Vidhyalaya</h4>
+                    <p>10th Grade</p>
+                    <p>Percentage - 86% | 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-content">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-items">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fab fa-java"></i> Java</span>
+                    <span><i class="fas fa-copyright"></i> C</span>
+                    <span><i class="fas fa-plus"></i> C++</span>
+                    <span><i class="fas fa-database"></i> SQL</span>
+                    <span><i class="fas fa-database"></i> NoSQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <div class="skill-items">
+                    <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                    <span><i class="fas fa-file-excel"></i> Excel</span>
+                    <span><i class="fas fa-chart-line"></i> Tableau</span>
+                    <span><i class="fab fa-google"></i> Google Colab</span>
+                    <span><i class="fas fa-brain"></i> Machine Learning</span>
+                    <span><i class="fas fa-chart-pie"></i> Data Science</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <!-- Data Analytics Projects Folder -->
+        <div class="project-folder">
+            <div class="folder-header" onclick="toggleFolder('data-analytics')">
+                <i class="fas fa-folder"></i>
+                <h3>Data Analytics Projects</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="projects-grid" id="data-analytics">
+                <div class="project-card">
+                    <h3>Super Store Insight</h3>
+                    <p>Superstore Sales Report Project involved creating a comprehensive Power BI report with insightful visualizations. Enhanced skills in data analysis and reporting, delivering clear, data-driven insights to support better business decisions.</p>
+                    <div class="project-tech">
+                        <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-file-excel"></i> Excel</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/-Superstore-Insights-Dashboard.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Health Hospital: Work and Leads Workflow Dashboard</h3>
+                    <p>Power BI Healthcare Dashboard Project focused on optimizing hospital operations and lead management workflows. Provided actionable insights to improve patient care and streamline healthcare processes through efficient data analysis.</p>
+                    <div class="project-tech">
+                        <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-file-excel"></i> Excel</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/-Health-Hospital-Work-and-Leads-Workflow-Dashboard.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Ola DataAnalytics Project</h3>
+                    <p>Power BI, SQL, and Python based analysis of ride-hailing data, uncovering insights on demand, pricing, customer behavior, and driver performance. Helps optimize fleet distribution, enhance revenue, and improve user experience.</p>
+                    <div class="project-tech">
+                        <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-file-excel"></i> Excel</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/olaDataAnalyticsproject.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Pizza Sales Data Analytics</h3>
+                    <p>Comprehensive analysis of Pizza Sales Data using SQL and Power BI to uncover key business insights. Developed interactive dashboards with DAX calculations for KPIs, helping improve sales strategies and customer satisfaction through data-driven decision-making.</p>
+                    <div class="project-tech">
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span><i class="fas fa-calculator"></i> DAX</span>
+                        <span><i class="fas fa-chart-line"></i> Analytics</span>
+                    </div>
+                    <a href="https://lnkd.in/d5c6Kt7H" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Machine Learning Projects Folder -->
+        <div class="project-folder">
+            <div class="folder-header" onclick="toggleFolder('machine-learning')">
+                <i class="fas fa-folder"></i>
+                <h3>Machine Learning Projects</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="projects-grid" id="machine-learning">
+                <div class="project-card">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p>Titanic Survival Prediction Project built using Python, Scikit-learn, and ML algorithms like Logistic Regression and Random Forest. Included feature engineering, preprocessing and achieved high accuracy, with key insights visualized using Matplotlib and Seaborn.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-brain"></i> Scikit-learn</span>
+                        <span><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        <span><i class="fas fa-chart-area"></i> Seaborn</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/TitanicSurvivalPrediction.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Dog vs Cat Classifier</h3>
+                    <p>Developed a deep learning image classification model using Convolutional Neural Networks (CNN) to accurately distinguish between dogs and cats. Implemented using Python, TensorFlow, and Keras with data preprocessing, model training, and performance optimization techniques.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-brain"></i> Deep Learning</span>
+                        <span><i class="fas fa-network-wired"></i> CNN</span>
+                        <span><i class="fab fa-tensorflow"></i> TensorFlow</span>
+                        <span><i class="fas fa-camera"></i> Computer Vision</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/DogVsCatClassifier.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Driver Drowsiness Detection System</h3>
+                    <p>Built using computer vision and machine learning to monitor facial features and eye movements in real time. Triggers audible and visual alerts for detecting drowsiness, improving road safety and preventing accidents.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-camera"></i> OpenCV</span>
+                        <span><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span><i class="fas fa-desktop"></i> Computer Vision</span>
+                    </div>
+                    <a href="https://github.com/manavpatel7220/DriverDrawsyness.git" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>The Curly Brackets</h3>
+                    <p class="role">Database Developer</p>
+                    <p class="date">Dec 2024 - Mar 2025</p>
+                    <p>Worked on writing, optimizing, and debugging SQL queries, managing relational databases, and supporting data-driven tasks.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Main flow Services and Technologies Pvt.Ltd.</h3>
+                    <p class="role">Data Science Intern</p>
+                    <p class="date">Jun 2024 - Aug 2024</p>
+                    <p>Demonstrated exceptional dedication and enthusiasm while working on various data science projects and tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card">
+                <div class="certification-content">
+                    <h3>Data Science with Python</h3>
+                    <p class="issuer">Parul University</p>
+                    <p>Comprehensive training in Python programming for data science, including data analysis, manipulation, and visualization.</p>
+                    <a href="#" class="cert-link" target="_blank">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-content">
+                    <h3>Data visualization using Power BI</h3>
+                    <p class="issuer">Great Learning Academy</p>
+                    <p>Advanced training in Power BI for creating interactive dashboards and data visualization.</p>
+                    <a href="#" class="cert-link" target="_blank">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-content">
+                    <h3>Introduction of Tableau</h3>
+                    <p class="issuer">Simplilearn</p>
+                    <p>Fundamentals of data visualization and dashboard creation using Tableau.</p>
+                    <a href="#" class="cert-link" target="_blank">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <h2 class="section-title">Research Publications</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h3>WhatsApp Chatbot for Electric Bike</h3>
+                    <p class="publisher">International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET)</p>
+                    <p class="date">Volume 14, Issue 3, March 2025</p>
+                    <p>Research paper focused on developing an innovative WhatsApp chatbot system for electric bike management and user interaction. The system provides real-time assistance and monitoring capabilities for electric bike users.</p>
+                    <div class="achievement-tags">
+                        <span><i class="fab fa-whatsapp"></i> WhatsApp API</span>
+                        <span><i class="fas fa-robot"></i> Chatbot</span>
+                        <span><i class="fas fa-charging-station"></i> E-Mobility</span>
+                        <span><i class="fas fa-code"></i> Automation</span>
+                    </div>
+                    <a href="https://www.ijirset.com/upload/2025/march/151_WhatsApp.pdf" class="paper-link" target="_blank">
+                        <i class="fas fa-file-alt"></i> View Paper
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Seminars Section -->
+    <section id="training" class="training">
+        <h2 class="section-title">Training & Seminars</h2>
+        <p class="section-subtitle">Professional development activities</p>
+        <div class="training-grid">
+            <div class="training-card">
+                <div class="training-content">
+                    <h3>Impact Training for Interview Preparation</h3>
+                    <p class="organizer">Bytexl</p>
+                    <p class="date">May 2024 - June 2024</p>
+                    <p>Completed professional development training focused on interview skills and career readiness.</p>
+                    <div class="training-tags">
+                        <span><i class="fas fa-user-tie"></i> Interview Skills</span>
+                        <span><i class="fas fa-briefcase"></i> Career Development</span>
+                        <span><i class="fas fa-graduation-cap"></i> Professional Growth</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="training-card">
+                <div class="training-content">
+                    <h3>GDSC WOW Gujarat</h3>
+                    <p class="organizer">Google Developer Student Clubs</p>
+                    <p class="date">05 May, 2024</p>
+                    <p>Participated in a technical event focused on knowledge sharing and networking with developers across Gujarat.</p>
+                    <div class="training-tags">
+                        <span><i class="fab fa-google"></i> Google Technologies</span>
+                        <span><i class="fas fa-users"></i> Networking</span>
+                        <span><i class="fas fa-laptop-code"></i> Technical Skills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h3>Let's Connect!</h3>
+                <p>Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:manavmpatel2003@gmail.com">manavmpatel2003@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+917874269251">+91-7874269251</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <span>Vadodara, Gujarat</span>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links-contact">
+                <a href="https://github.com/manavpatel7220" target="_blank" class="social-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/manav-patel-7741b4293" target="_blank" class="social-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="resume/Manav_patel_resume.pdf" class="social-card" download>
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Manav Patel. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
